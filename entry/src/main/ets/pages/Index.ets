@@ -1,4 +1,4 @@
-import{TabType}from'../models/Index';
+import{TabType}from '../models/Index';
 import Recommend from '../views/Recommend';
 import Find from '../views/Find';
 import Moment from '../views/Moment';
@@ -45,11 +45,11 @@ struct Index {
           }
         }
         .padding({ top: this.safeTop })
-        .padding({ bottom: this.safeBottom })
         .backgroundColor('#131215')
         .tabBar(this.tabBarBuilder(item))
       })
     }
+    .padding({ bottom: this.safeBottom })
     .backgroundColor('#3b3f42')
     .onChange((index: number) => {
       this.isActive = this.tabData[index].name;
